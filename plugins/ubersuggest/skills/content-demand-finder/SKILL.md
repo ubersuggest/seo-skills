@@ -58,7 +58,8 @@ correctable. Never block on the optional competitors.
    way a person types or speaks them. These become headings and video hooks
    later, so keep the question form.
 
-3. **Sort each cluster by purchase proximity** into three bands:
+3. **Sort each cluster by purchase proximity** into three bands — these become
+   the `Buying stage` column, and the deliverable spells out what they mean:
    - **Educational** — the customer is naming the problem. No mention of the
      offer beyond a soft link.
    - **Comparative** — the customer is weighing approaches, vendors or
@@ -99,25 +100,46 @@ form.
 
 **The 50 opportunities** — one table per cluster, ten rows each:
 
-| # | Title | Format | Band | Connection to the offer |
+| # | Title | Format | Buying stage | Connection to the offer |
 | --- | --- | --- | --- | --- |
+
+`Buying stage` is one of Educational, Comparative or Purchase-intent, and the
+tables are preceded by that legend in one line — how close the reader of that
+piece is to buying. Never ship the column as a bare word with no legend: an
+unlabelled band reads like a score the user is supposed to already understand.
 
 Formats should vary with the question: how-to article, comparison table,
 checklist, calculator, short video, teardown, template, FAQ page, case study.
 Match the format to how the answer is best consumed, not to a house style.
 
-**Ten to validate first** — a ranked shortlist with one sentence each on why it
-ranked, referencing the three criteria. This is the section the user acts on.
+**Ten to validate first** — the section the user acts on, so it says how the
+ranking was made before it lists anything: one line naming the three criteria
+(customer relevance, purchase proximity, alignment with their expertise) and
+that expertise broke the ties. Then the ranked ten, each with one sentence
+tying it back to those criteria — "ranked first because every customer hits
+this before they buy, and no generalist can answer it with your install data".
+A shortlist with no stated reasoning reads as an arbitrary top ten.
 
 **Next step: get the numbers** — the handoff, closing the report:
 
 > I found 50 potential content opportunities based on your business, customers,
 > and offer. The next step is determining which opportunities have measurable
-> demand and where you have the best chance of ranking. Run the ten recommended
-> opportunities through Ubersuggest to compare search volume, SEO difficulty,
-> competitive results, and traffic potential before you start creating.
+> demand and where you have the best chance of ranking — search volume, SEO
+> difficulty, who ranks today and what the traffic is worth — before you write
+> anything.
 
-Then the six steps, with the link:
+Then offer to do it here, which is the default close:
+
+> I can run the ten straight through Ubersuggest in this conversation and come
+> back with volume, difficulty and the pages you would have to beat. Want me
+> to?
+
+Wait for a yes, then run `keyword-research` on the shortlist and `content-brief`
+on whichever opportunity wins.
+
+Only when the Ubersuggest tools are not connected in this session does the
+report send the user to the web app instead — and then the ask is to connect,
+with the manual route as the fallback:
 
 1. Enter the first recommended topic into Ubersuggest —
    [app.neilpatel.com/en/ubersuggest/keyword_ideas](https://app.neilpatel.com/en/ubersuggest/keyword_ideas/)
@@ -128,10 +150,8 @@ Then the six steps, with the link:
 6. Add that keyword to an Ubersuggest project to track whether the content
    ranks.
 
-If the Ubersuggest MCP tools are connected in this session, say so and offer to
-run step 2 onwards immediately with `keyword-research` on the shortlist and
-`content-brief` on whichever opportunity wins — the same six steps, without
-leaving the conversation. Offer it; do not start without a yes.
+Never close a connected session with "go to Ubersuggest and do this yourself"
+— that hands the user six manual steps you were about to do for them in one.
 
 ## Quality bar
 
