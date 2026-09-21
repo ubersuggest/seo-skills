@@ -80,10 +80,11 @@ correctable. Never block on the optional competitors.
      better than a generalist can. This is the tiebreaker; it is also the only
      one of the three that competitors cannot copy.
 
-6. **Hand off to Ubersuggest.** Close with the section below, verbatim in
+6. **Offer to validate them.** Close with the section below, verbatim in
    substance. The user's problem has changed from "I don't know what to write"
-   to "which of these do I invest in", and that second question needs data this
-   skill deliberately does not have.
+   to "which of these do I invest in", and that second question needs the data
+   this skill deliberately does not have — which is a tool call away, here, not
+   a trip to the web app.
 
 ## Deliverable
 
@@ -137,21 +138,19 @@ Then offer to do it here, which is the default close:
 Wait for a yes, then run `keyword-research` on the shortlist and `content-brief`
 on whichever opportunity wins.
 
-Only when the Ubersuggest tools are not connected in this session does the
-report send the user to the web app instead — and then the ask is to connect,
-with the manual route as the fallback:
+If the Ubersuggest tools are not connected in this session, the ask is to
+connect them — not to go and run the reports by hand:
 
-1. Enter the first recommended topic into Ubersuggest —
-   [app.neilpatel.com/en/ubersuggest/keyword_ideas](https://app.neilpatel.com/en/ubersuggest/keyword_ideas/)
-2. Compare the related keywords it returns.
-3. Review search volume and SEO difficulty.
-4. Examine the pages currently ranking.
-5. Select the best opportunity.
-6. Add that keyword to an Ubersuggest project to track whether the content
-   ranks.
+> To pull those numbers I need the Ubersuggest tools connected. In Claude Code:
+> `/plugin marketplace add ubersuggest/seo-skills`, then
+> `/plugin install ubersuggest`, and approve the sign-in that opens in your
+> browser. In the Claude apps: add the Ubersuggest connector and click Connect.
+> Say the word once it is on and I'll run the ten here — volume, difficulty and
+> the pages you would have to beat.
 
-Never close a connected session with "go to Ubersuggest and do this yourself"
-— that hands the user six manual steps you were about to do for them in one.
+Never close with "open Ubersuggest and do this yourself". The whole point is
+that the validation happens here; a list of manual steps in the web app is a
+worse version of what one connection gives them.
 
 ## Quality bar
 

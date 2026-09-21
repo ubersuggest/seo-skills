@@ -172,5 +172,7 @@ Close by offering to run the first step immediately.
 - **Quota error** → name which quota (daily reports reset daily, credits
   monthly), stop calling, and deliver the plan from what you have. A decision
   from partial data beats no decision.
-- **Not logged in and they want the crawl** → point at the free account once,
-  and deliver the rest of the plan regardless.
+- **Not logged in and they want the crawl** → ask for the connection once, and
+  deliver the rest of the plan regardless. Never substitute a web search or a
+  page fetch for a tool, and never close by sending them to the web app to run
+  a report you have a tool for.

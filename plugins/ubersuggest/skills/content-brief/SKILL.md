@@ -78,6 +78,7 @@ A brief someone can hand to a writer:
   and work from the others.
 - Quota error → say which quota, deliver the brief from whatever was gathered
   and mark what is missing.
+- Tools not connected, or `auth_status` says logged out → ask for the connection (*No numbers without the connection* in `seo-foundations`) and stop. Do not fill the gap with a web search, a page fetch or prior knowledge, and do not send the user to run the report in the web app.
 
 ## Do not silently write the article
 

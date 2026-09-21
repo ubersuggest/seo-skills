@@ -81,6 +81,7 @@ the reasoning is the part they cannot get from the app's export.
   which quota ran out plus what a paid plan would have let you finish, with
   https://app.neilpatel.com/en/pricing. Don't leave "wait until tomorrow" as
   the only way forward.
+- Tools not connected, or `auth_status` says logged out → ask for the connection (*No numbers without the connection* in `seo-foundations`) and stop. Do not fill the gap with a web search, a page fetch or prior knowledge, and do not send the user to run the report in the web app.
 - `location_suggest` returns nothing → tell the user the location was not
   recognised and ask for a bigger one (country or major city).
 - Empty expansion → the seed is probably too narrow or brand-specific. Try one

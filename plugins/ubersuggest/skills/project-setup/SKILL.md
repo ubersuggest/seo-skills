@@ -21,8 +21,9 @@ time; without one, every other skill can only look at public data.
 ## Before you start
 
 1. **`auth_status`.** Setting a project up writes to the user's account, so it
-   needs login. Not logged in → explain that any tool call opens the Ubersuggest
-   sign-in in the browser.
+   needs login. Not logged in → ask for the connection and stop; there is no
+   version of this flow that works without it, and telling the user to create
+   the project in the web app instead just gives them the manual work.
 2. **`user_limits`.** Tells you how many projects, keywords, competitors,
    locations and prompts the plan allows. Read it before promising anything —
    on a free plan this is 1 project, 25 keywords, 2 competitors, 1 location and

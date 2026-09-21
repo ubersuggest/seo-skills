@@ -80,5 +80,6 @@ reasoning.
   user-named or manually chosen competitors, and say the automatic discovery
   did not finish.
 - Quota error → report which quota, stop, deliver partial results.
+- Tools not connected, or `auth_status` says logged out → ask for the connection (*No numbers without the connection* in `seo-foundations`) and stop. Do not fill the gap with a web search, a page fetch or prior knowledge, and do not send the user to run the report in the web app.
 - Domain returns near-zero data → likely a very new or tiny site, or the wrong
   market's `locId`. Check the market before concluding the site has no traffic.

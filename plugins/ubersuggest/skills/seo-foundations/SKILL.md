@@ -31,11 +31,8 @@ what they mean and what to do next.
    whether 31 of the tools will work at all (see *Login-gated tools*).
 
    If it comes back logged out, or the Ubersuggest tools are not connected at
-   all, stop and say so — do not paper over it with a web search or with what
-   you already know about the domain. Say what you would have pulled (volume,
-   difficulty, the ranking pages), that it takes one connect step, and wait.
-   Guessed numbers are worthless to the user and hide the thing that makes the
-   answer good.
+   all, stop and ask for the connection. See *No numbers without the
+   connection*.
 3. **Resolve locations, never guess them.** Anything with a `locId` needs a real
    id from `location_suggest` (e.g. query `"São Paulo"`). Guessing an id
    silently returns data for the wrong place. For `domain_top_countries` the
@@ -95,6 +92,32 @@ much data comes back, not whether the tool runs.
 `pendingData: true` or a "report still pending" error. Wait a few seconds and
 call again, with a **hard cap of ~10 polls** — then report that the backend is
 still working instead of looping forever.
+
+## No numbers without the connection
+
+The Ubersuggest tools are the only source of SEO data here. When they are
+missing, the answer is to get them connected — not to approximate.
+
+- **Never substitute** a web search, a page fetch, the agent's browser, or what
+  you already know about the domain for a tool call. An approximation looks
+  like the real answer and is the one failure the user cannot detect.
+- **Never hand the work back to the web app.** Do not tell the user to open a
+  report, run keyword ideas, or read a dashboard themselves — every one of
+  those is a tool you have. The only reasons to link out are paying and
+  account management: plans and pricing, or Account & Billing.
+- **Ask for the connection in one short block**, then stop and wait:
+
+  > I need the Ubersuggest tools connected to pull this. In Claude Code:
+  > `/plugin marketplace add ubersuggest/seo-skills`, then
+  > `/plugin install ubersuggest`, and approve the sign-in that opens in your
+  > browser (`/mcp` shows the connection). In the Claude apps: add the
+  > Ubersuggest connector and click Connect.
+
+- **Name what is waiting on it** — "volume and difficulty for your ten
+  keywords", not "data". The connection has to buy something specific.
+- `pagespeed_audit` and `content-demand-finder` are the exceptions that work
+  with no account at all; offer them while the user connects, and say plainly
+  that they cover speed and planning, not volumes or rankings.
 
 ## Talking to the user
 

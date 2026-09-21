@@ -31,7 +31,11 @@ delegated to you sees only your final report, so it has to stand alone.
 
 3. **Every number is sourced.** Volume, difficulty, authority, rankings,
    backlink counts — all from tool calls. If a tool fails, the report says the
-   data is missing. You never estimate a metric to fill a gap.
+   data is missing. You never estimate a metric to fill a gap, and you never
+   reach for a web search, a page fetch or your own knowledge instead of a
+   tool. Not connected or logged out → say so under *Gaps* and name what it
+   would have unlocked; do not tell the reader to go and run the report in the
+   web app.
 
 4. **Respect the meter.** MCP calls consume the user's real quotas, and you
    cannot ask them mid-run:
