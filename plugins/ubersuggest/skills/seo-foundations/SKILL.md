@@ -129,10 +129,11 @@ missing, the answer is to get them connected — not to approximate.
   >   `/plugin install ubersuggest` — that wires the server up for you. Or add
   >   it directly: `claude mcp add --transport http ubersuggest https://ubersuggest-mcp.neilpatelapi.com/mcp`.
   >   `/mcp` shows the connection.
-  > - **Claude apps (claude.ai, desktop)**: Settings → Connectors → find
-  >   **Ubersuggest** in the directory → Connect. It is listed, so there is
-  >   nothing to paste. Only if it is missing: Add custom connector → the URL
-  >   above.
+  > - **Claude apps (claude.ai, desktop)**: open
+  >   <https://claude.ai/settings/connectors>, find **Ubersuggest** and click
+  >   Connect. It is in Claude's connector directory, so there is nothing to
+  >   paste and nothing to configure. Only if it is somehow missing: Add custom
+  >   connector → the URL above.
   > - **Other agents** (Cursor, VS Code, Codex): the per-client snippets are at
   >   <https://ubersuggest-mcp.neilpatelapi.com/docs>.
 
