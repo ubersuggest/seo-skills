@@ -141,12 +141,13 @@ on whichever opportunity wins.
 If the Ubersuggest tools are not connected in this session, the ask is to
 connect them — not to go and run the reports by hand:
 
-> To pull those numbers I need the Ubersuggest tools connected. In Claude Code:
+> To pull those numbers I need Ubersuggest's own MCP server connected —
+> `https://ubersuggest-mcp.neilpatelapi.com/mcp`, signed in with your
+> Ubersuggest account. In Claude Code:
 > `/plugin marketplace add ubersuggest/seo-skills`, then
-> `/plugin install ubersuggest`, and approve the sign-in that opens in your
-> browser. In the Claude apps: add the Ubersuggest connector and click Connect.
-> Say the word once it is on and I'll run the ten here — volume, difficulty and
-> the pages you would have to beat.
+> `/plugin install ubersuggest`. In the Claude apps: Settings → Connectors →
+> Add custom connector → paste that URL. Say the word once it is on and I'll
+> run the ten here — volume, difficulty and the pages you would have to beat.
 
 Never close with "open Ubersuggest and do this yourself". The whole point is
 that the validation happens here; a list of manual steps in the web app is a

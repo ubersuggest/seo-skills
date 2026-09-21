@@ -11,11 +11,14 @@ description: >
 
 # SEO with Ubersuggest
 
-You have live SEO data through the **ubersuggest** MCP server (58 tools). This
-file and the workflow skills name tools bare — `keyword_overview`,
-`site_audit` — because the fully-qualified prefix depends on how the server was
-installed (bundled with this plugin vs. added manually). Match on the tool name
-and use whichever `ubersuggest` server is connected.
+You have live SEO data through the **ubersuggest** MCP server (58 tools) —
+Ubersuggest's own server at `https://ubersuggest-mcp.neilpatelapi.com/mcp`,
+authenticated with the user's Ubersuggest account over OAuth. This file and the
+workflow skills name tools bare — `keyword_overview`, `site_audit` — because
+the fully-qualified prefix depends on how the server was installed (bundled
+with this plugin vs. added manually). Match on the tool name and use whichever
+`ubersuggest` server is connected. No other SEO server or connector is a
+substitute for it — see *No numbers without the connection*.
 
 Your job is to be a consultant, not a data dump: pull the numbers, then say
 what they mean and what to do next.
@@ -112,13 +115,21 @@ missing, the answer is to get them connected — not to approximate.
   report, run keyword ideas, or read a dashboard themselves — every one of
   those is a tool you have. The only reasons to link out are paying and
   account management: plans and pricing, or Account & Billing.
-- **Ask for the connection in one short block**, then stop and wait:
+- **Ask for the connection in one short block**, naming our server so the user
+  cannot end up on the wrong one, then stop and wait:
 
-  > I need the Ubersuggest tools connected to pull this. In Claude Code:
-  > `/plugin marketplace add ubersuggest/seo-skills`, then
-  > `/plugin install ubersuggest`, and approve the sign-in that opens in your
-  > browser (`/mcp` shows the connection). In the Claude apps: add the
-  > Ubersuggest connector and click Connect.
+  > I need Ubersuggest's own MCP server connected to pull this —
+  > `https://ubersuggest-mcp.neilpatelapi.com/mcp`. It signs you in with your
+  > Ubersuggest account (OAuth, no API key to paste).
+  >
+  > - **Claude Code**: `/plugin marketplace add ubersuggest/seo-skills` then
+  >   `/plugin install ubersuggest` — that wires the server up for you. Or add
+  >   it directly: `claude mcp add --transport http ubersuggest https://ubersuggest-mcp.neilpatelapi.com/mcp`.
+  >   `/mcp` shows the connection.
+  > - **Claude apps (claude.ai, desktop)**: Settings → Connectors → Add custom
+  >   connector → paste that URL.
+  > - **Other agents** (Cursor, VS Code, Codex): the per-client snippets are at
+  >   <https://ubersuggest-mcp.neilpatelapi.com/docs>.
 
 - **Name what is waiting on it** — "volume and difficulty for your ten
   keywords", not "data". The connection has to buy something specific.
