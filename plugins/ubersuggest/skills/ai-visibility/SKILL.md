@@ -18,8 +18,9 @@ Target: `$ARGUMENTS` (if empty, list the user's projects and ask which one).
 All three brand tools require an authenticated account **and** a project with
 AI Search Visibility configured. Call `auth_status` first.
 
-- Not logged in → explain that this data is tied to their Ubersuggest account
-  and that any tool call opens the OAuth flow in the browser.
+- Not logged in → explain that this data is tied to their Ubersuggest account,
+  ask for the connection, and stop. Your impression of how often ChatGPT names
+  a brand is not a measurement — never offer one in place of the report.
 - Logged in but no project → run the **project-setup** skill: it creates the
   project and configures the AI visibility topics and prompts in one flow.
 - Project exists but no brand configured (`has_brand` is false, or `brand_config`
@@ -86,3 +87,4 @@ AI Search Visibility configured. Call `auth_status` first.
   before concluding the brand is invisible; "no data" and "not mentioned" are
   very different findings and must not be conflated.
 - Plan/quota error → report which limit was hit.
+- Tools not connected, or `auth_status` says logged out → ask for the connection (*No numbers without the connection* in `seo-foundations`) and stop. Do not fill the gap with a web search, a page fetch or prior knowledge, and do not send the user to run the report in the web app.

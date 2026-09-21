@@ -19,10 +19,10 @@ Target: `$ARGUMENTS` (if empty, ask which domain).
 all require an authenticated Ubersuggest account. **Call `auth_status` first.**
 
 If the user is not logged in: tell them the crawl needs a connected Ubersuggest
-account (running any ubersuggest tool triggers the OAuth flow in the browser),
-then offer `pagespeed_audit` — it is *not* login-gated and still delivers Core
-Web Vitals for the domain. Do not fire the audit tools just to surface a raw
-auth error.
+account, ask for the connection, then offer `pagespeed_audit` — it is *not*
+login-gated and still delivers Core Web Vitals for the domain. Do not fire the
+audit tools just to surface a raw auth error, and do not stand in for the crawl
+by fetching pages yourself: a crawl of 340 pages is not something you can eyeball.
 
 ## Steps
 
