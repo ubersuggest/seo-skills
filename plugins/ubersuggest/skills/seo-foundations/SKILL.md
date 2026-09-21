@@ -118,16 +118,21 @@ missing, the answer is to get them connected — not to approximate.
 - **Ask for the connection in one short block**, naming our server so the user
   cannot end up on the wrong one, then stop and wait:
 
-  > I need Ubersuggest's own MCP server connected to pull this —
-  > `https://ubersuggest-mcp.neilpatelapi.com/mcp`. It signs you in with your
-  > Ubersuggest account (OAuth, no API key to paste).
+  > I need Ubersuggest's own MCP server connected to pull this. It signs you in
+  > with your Ubersuggest account (OAuth, no API key to paste). The endpoint,
+  > for the clients that ask for one, is
+  > `https://ubersuggest-mcp.neilpatelapi.com/mcp` — but in the Claude apps
+  > Ubersuggest is already in the connector directory, so connecting is one
+  > click.
   >
   > - **Claude Code**: `/plugin marketplace add ubersuggest/seo-skills` then
   >   `/plugin install ubersuggest` — that wires the server up for you. Or add
   >   it directly: `claude mcp add --transport http ubersuggest https://ubersuggest-mcp.neilpatelapi.com/mcp`.
   >   `/mcp` shows the connection.
-  > - **Claude apps (claude.ai, desktop)**: Settings → Connectors → Add custom
-  >   connector → paste that URL.
+  > - **Claude apps (claude.ai, desktop)**: Settings → Connectors → find
+  >   **Ubersuggest** in the directory → Connect. It is listed, so there is
+  >   nothing to paste. Only if it is missing: Add custom connector → the URL
+  >   above.
   > - **Other agents** (Cursor, VS Code, Codex): the per-client snippets are at
   >   <https://ubersuggest-mcp.neilpatelapi.com/docs>.
 
