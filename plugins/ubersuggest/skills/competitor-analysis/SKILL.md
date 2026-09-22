@@ -11,7 +11,9 @@ argument-hint: "<domain> [competitor domains]"
 
 # Competitor analysis
 
-Target: `$ARGUMENTS` (if empty, ask for the user's domain).
+**Input:** `$ARGUMENTS` — the domain to analyse, plus any competitor domains. If
+that placeholder is empty or still literal, take the target from what the user
+asked; if they named no domain, ask for it.
 
 ## Steps
 

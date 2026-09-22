@@ -11,7 +11,9 @@ argument-hint: "[project name or domain]"
 
 # AI search visibility
 
-Target: `$ARGUMENTS` (if empty, list the user's projects and ask which one).
+**Input:** `$ARGUMENTS` — the project name or domain to report on. If that
+placeholder is empty or still literal, take the target from what the user asked;
+if they named none, list their projects and ask which one.
 
 ## Before you start: login + a configured project
 
@@ -73,8 +75,9 @@ AI Search Visibility configured. Call `auth_status` first.
 - **Sentiment flags** — any prompt where the brand is mentioned unfavourably,
   quoted or characterised specifically.
 - **Recommendations**, grounded in how answer engines actually pick sources
-  (see `references/methodology.md` in the `seo-foundations` skill, section
-  AEO/GEO). Typically: content that directly answers the missing prompts with
+  (if the `seo-foundations` skill is installed alongside this one, its
+  `references/methodology.md` covers this in the AEO/GEO section; if it is not
+  available, do not go looking for it — the guidance below is enough). Typically: content that directly answers the missing prompts with
   extractable structure; explicit entity naming; and off-site presence in the
   reviews, roundups and directories the engines synthesise from — since a brand
   absent from third-party sources tends to be absent from AI answers regardless

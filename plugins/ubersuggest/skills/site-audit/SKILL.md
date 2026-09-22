@@ -11,7 +11,9 @@ argument-hint: "<domain>"
 
 # Site audit
 
-Target: `$ARGUMENTS` (if empty, ask which domain).
+**Input:** `$ARGUMENTS` — the domain to crawl. If that placeholder is empty or
+still literal, take the domain from what the user asked; if they named none, ask
+which domain.
 
 ## Before you start: this needs a login
 

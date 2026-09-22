@@ -12,7 +12,9 @@ argument-hint: "<website> [what you sell] [ideal customer] [market]"
 
 # Content demand finder
 
-Business: `$ARGUMENTS`
+**Input:** `$ARGUMENTS` — the website, what they sell, their ideal customer and
+market. If that placeholder is empty or still literal, take the business from what
+the user asked.
 
 Turn a website into 50 customer-driven content opportunities in under a minute.
 

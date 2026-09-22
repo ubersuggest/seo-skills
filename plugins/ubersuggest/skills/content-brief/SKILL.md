@@ -11,7 +11,9 @@ argument-hint: "<target keyword> [location]"
 
 # Content brief
 
-Target keyword: `$ARGUMENTS` (if empty, ask for the keyword and market).
+**Input:** `$ARGUMENTS` — the target keyword, and a location if one was given. If
+that placeholder is empty or still literal, take the keyword from what the user
+asked; if they named none, ask for the keyword and market.
 
 ## Steps
 

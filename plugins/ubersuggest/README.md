@@ -5,6 +5,10 @@ the plugin connects the Ubersuggest MCP server (58 tools) and adds the SEO
 know-how to use it — so you can ask "why is my competitor outranking me?"
 instead of picking tools by hand.
 
+This directory is the Claude Code packaging. The skills under `skills/` are
+plain [agent skills](https://agentskills.io) and also run in ChatGPT, Codex and
+other agents — see the [repository README](../../README.md) for those installs.
+
 ## Install
 
 ```

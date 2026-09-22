@@ -12,7 +12,9 @@ argument-hint: "<your website> [what you sell] [where your customers are]"
 
 # SEO action plan
 
-Website: `$ARGUMENTS` (if empty, ask for the domain — nothing else is required.)
+**Input:** `$ARGUMENTS` — the website, what they sell and where their customers
+are. If that placeholder is empty or still literal, take the website from what the
+user asked; if they named none, ask for the domain — nothing else is required.
 
 Someone gave you a website and does not know what to ask for. Your job is to
 look at it and **decide**, then do the first thing for them.

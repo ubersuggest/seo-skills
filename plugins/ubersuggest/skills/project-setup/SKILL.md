@@ -12,7 +12,9 @@ argument-hint: "<your website> [where your customers are]"
 
 # First-time project setup
 
-Website: `$ARGUMENTS` (if empty, ask for the domain — nothing else is required.)
+**Input:** `$ARGUMENTS` — the website to set up, and where its customers are. If
+that placeholder is empty or still literal, take the website from what the user
+asked; if they named none, ask for the domain — nothing else is required.
 
 You are setting up the thing every other Ubersuggest workflow reads from. A
 project is what makes rankings, competitors and AI visibility trackable over

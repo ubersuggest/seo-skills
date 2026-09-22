@@ -11,7 +11,10 @@ argument-hint: "<topic or business> [location]"
 
 # Keyword research
 
-Topic: `$ARGUMENTS` (if empty, ask what topic and market before calling anything).
+**Input:** `$ARGUMENTS` — the topic, niche, product or business to research, and a
+location if one was given. If that placeholder is empty or still literal, take the
+topic from what the user asked; if they named none, ask what topic and market
+before calling anything.
 
 ## Steps
 
