@@ -77,6 +77,10 @@ correctable. Never block on the optional competitors.
 5. **Pick the ten to validate.** Rank the 50 on three things and take the top
    ten:
    - **Customer relevance** — how many of their customers have this problem.
+     This is inferred from the business description, not measured: you have
+     no search data yet, so it is a reasoned guess about who has the problem,
+     not a count of who searches for it. Say so wherever the ranking appears
+     (see the deliverable) — real search data is what validates it.
    - **Purchase proximity** — how close the question sits to a buying decision.
    - **Alignment with their expertise** — whether this business can answer it
      better than a generalist can. This is the tiebreaker; it is also the only
@@ -118,7 +122,14 @@ Match the format to how the answer is best consumed, not to a house style.
 **Ten to validate first** — the section the user acts on, so it says how the
 ranking was made before it lists anything: one line naming the three criteria
 (customer relevance, purchase proximity, alignment with their expertise) and
-that expertise broke the ties. Then the ranked ten, each with one sentence
+that expertise broke the ties, plus one line making clear that customer
+relevance is inferred by AI from the business description and has to be
+validated with real search data before anyone writes a word — for example:
+
+> Customer relevance here is my read of your business, not a measurement.
+> Validate it against real search data before committing to any of these.
+
+Then the ranked ten, each with one sentence
 tying it back to those criteria — "ranked first because every customer hits
 this before they buy, and no generalist can answer it with your install data".
 A shortlist with no stated reasoning reads as an arbitrary top ten.
@@ -131,7 +142,11 @@ A shortlist with no stated reasoning reads as an arbitrary top ten.
 > difficulty, who ranks today and what the traffic is worth — before you write
 > anything.
 
-Then offer to do it here, which is the default close:
+Then offer to do it here. Which offer you make depends on one check you do
+before writing the close: **is an `ubersuggest` tool available in this
+session?** Look at the tools you actually have; do not assume either way.
+
+If it is, the default close:
 
 > I can run the ten straight through Ubersuggest in this conversation and come
 > back with volume, difficulty and the pages you would have to beat. Want me
@@ -140,8 +155,11 @@ Then offer to do it here, which is the default close:
 Wait for a yes, then run `keyword-research` on the shortlist and `content-brief`
 on whichever opportunity wins.
 
-If the Ubersuggest tools are not connected in this session, the ask is to
-connect them — not to go and run the reports by hand:
+If it is not, the close is the ask to connect, and it always carries the
+connector link — never the offer above without it, and never a suggestion to
+run the reports by hand. Put the connector in front of them with the link; do
+not search the connector directory for it, which returns competitors and not
+Ubersuggest (see *No numbers without the connection* in `seo-foundations`):
 
 > To pull those numbers I need Ubersuggest connected, signed in with your
 > Ubersuggest account — one click here:
@@ -167,6 +185,11 @@ industry. Before delivering, check three things:
   connection line of "builds topical authority" means the idea has no
   connection. Cut it or replace it.
 - **Is any number in the report a measurement?** If so, delete it.
+- **Does the shortlist say that customer relevance is inferred, not measured,
+  and point at real search data to validate it?** If not, add the line.
+- **If Ubersuggest is not connected, does the close contain the connector
+  link?** A close that offers to "run the numbers" with no way to connect
+  leaves the user stuck. Add the link.
 
 ## When something fails
 
