@@ -20,6 +20,9 @@ On your first Ubersuggest tool call, Claude Code opens your browser to sign in
 with your Ubersuggest account (OAuth 2.0). There's nothing to configure and no
 API key to paste. Check the connection any time with `/mcp`.
 
+The MCP server is operated by NP Digital (Ubersuggest); see the
+[privacy notice](https://npdigital.com/privacy-notice/) for how your data is handled.
+
 ## Commands
 
 Skills are namespaced as `/ubersuggest:<skill>`; the short form (`/site-audit`)

@@ -2,12 +2,14 @@
 	"name": "ubersuggest",
 	"displayName": "Ubersuggest SEO",
 	"description": "Turns Claude into an SEO consultant backed by real Ubersuggest data: keyword research, competitor analysis, site audits, backlinks, content briefs and AI search visibility.",
+	"icon": "./icon.svg",
 	"version": "0.2.0",
 	"author": {
 		"name": "Ubersuggest",
 		"url": "https://neilpatel.com"
 	},
 	"homepage": "https://ubersuggest-mcp.neilpatelapi.com/docs",
+	"privacyPolicyUrl": "https://npdigital.com/privacy-notice/",
 	"repository": "https://github.com/ubersuggest/seo-skills",
 	"license": "Apache-2.0",
 	"keywords": [
