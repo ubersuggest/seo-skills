@@ -3,7 +3,7 @@
 	"displayName": "Ubersuggest",
 	"description": "Turns Claude into an SEO consultant backed by real Ubersuggest data: keyword research, competitor analysis, site audits, backlinks, content briefs and AI search visibility.",
 	"icon": "./icon.svg",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"author": {
 		"name": "Ubersuggest",
 		"url": "https://neilpatel.com"
