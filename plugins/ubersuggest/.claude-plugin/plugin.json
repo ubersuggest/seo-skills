@@ -1,6 +1,6 @@
 {
 	"name": "ubersuggest",
-	"displayName": "Ubersuggest SEO",
+	"displayName": "Ubersuggest",
 	"description": "Turns Claude into an SEO consultant backed by real Ubersuggest data: keyword research, competitor analysis, site audits, backlinks, content briefs and AI search visibility.",
 	"icon": "./icon.svg",
 	"version": "0.2.0",
