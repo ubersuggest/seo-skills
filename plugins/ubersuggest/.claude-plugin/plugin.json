@@ -9,7 +9,10 @@
 		"url": "https://neilpatel.com"
 	},
 	"homepage": "https://ubersuggest-mcp.neilpatelapi.com/docs",
+	"documentationUrl": "https://ubersuggest-mcp.neilpatelapi.com/docs",
+	"supportUrl": "https://ubersuggest.zendesk.com/hc/en-us/requests/new",
 	"privacyPolicyUrl": "https://npdigital.com/privacy-notice/",
+	"termsOfServiceUrl": "https://npdigital.com/terms-of-service/",
 	"repository": "https://github.com/ubersuggest/seo-skills",
 	"license": "Apache-2.0",
 	"keywords": [
