@@ -100,7 +100,7 @@ which tools require login, and how quotas work.
 - Tool reference: https://ubersuggest-mcp.neilpatelapi.com/docs
 - Machine-readable docs: https://ubersuggest-mcp.neilpatelapi.com/llms.md
 - Pricing: https://app.neilpatel.com/en/pricing
-- Support: https://ubersuggest.zendesk.com/hc/en-us/requests/new
+- Support: https://help.ubersuggest.com/hc/en-us/requests/new
 
 ## Licence
 
