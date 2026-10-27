@@ -1,0 +1,95 @@
+{
+	"name": "ubersuggest",
+	"description": "Official Ubersuggest plugins for Claude Code — live SEO data and SEO know-how from the Ubersuggest MCP server.",
+	"plugins": [
+		{
+			"name": "ubersuggest",
+			"displayName": "Ubersuggest",
+			"description": "Turns Claude into an SEO consultant backed by real Ubersuggest data: keyword research, competitor analysis, site audits, backlinks, content briefs and AI search visibility.",
+			"version": "0.2.1",
+			"skills": [
+				{
+					"name": "ai-visibility",
+					"command": "/ubersuggest:ai-visibility",
+					"displayName": "AI Search Visibility",
+					"shortDescription": "See how often ChatGPT, Perplexity and AI Overviews mention your brand.",
+					"description": "Report how visible a brand is inside AI answers (ChatGPT, Perplexity, Google AI Overviews, Claude) using Ubersuggest's AI Search Visibility data. Use when the user asks whether ChatGPT or other AI tools mention their brand, about AI search visibility, share of voice in AI answers, AEO or GEO, brand sentiment in LLM responses, or which competitors get recommended instead of them.",
+					"argumentHint": "[project name or domain]",
+					"path": "plugins/ubersuggest/skills/ai-visibility/SKILL.md"
+				},
+				{
+					"name": "competitor-analysis",
+					"command": "/ubersuggest:competitor-analysis",
+					"displayName": "Competitor Analysis",
+					"shortDescription": "Compare a domain against its organic competitors and find the keyword gaps.",
+					"description": "Analyse a domain and its organic competitors, then report the keyword and content gaps. Use when the user asks who their competitors are, why a competitor outranks them, what keywords a competitor ranks for, which pages drive a competitor's traffic, how their domain compares to another, or asks for a domain overview or traffic estimate for any site.",
+					"argumentHint": "<domain> [competitor domains]",
+					"path": "plugins/ubersuggest/skills/competitor-analysis/SKILL.md"
+				},
+				{
+					"name": "content-brief",
+					"command": "/ubersuggest:content-brief",
+					"displayName": "Content Brief",
+					"shortDescription": "Build a data-backed outline for a keyword from the pages that rank for it.",
+					"description": "Build a data-backed content brief for a target keyword by analysing who currently ranks and why. Use when the user asks what to write about a keyword, how to outline or structure an article, what headings or topics to cover, how long a post should be, how to beat the pages currently ranking, or asks for content ideas for a topic.",
+					"argumentHint": "<target keyword> [location]",
+					"path": "plugins/ubersuggest/skills/content-brief/SKILL.md"
+				},
+				{
+					"name": "content-demand-finder",
+					"command": "/ubersuggest:content-demand-finder",
+					"displayName": "Content Demand Finder",
+					"shortDescription": "Turn a business description into 50 customer-driven content opportunities.",
+					"description": "Turn a business description into 50 customer-driven content opportunities — a Content Demand Map of problem clusters, the questions customers ask, and the articles or videos that answer them. Use when the user does not know what to write about, asks for a content plan, content strategy, editorial calendar, blog or video ideas for their business, or wants to know what their customers are searching for before committing to keywords.",
+					"argumentHint": "<website> [what you sell] [ideal customer] [market]",
+					"path": "plugins/ubersuggest/skills/content-demand-finder/SKILL.md"
+				},
+				{
+					"name": "keyword-research",
+					"command": "/ubersuggest:keyword-research",
+					"displayName": "Keyword Research",
+					"shortDescription": "Find and prioritise keywords for a topic, with volume, difficulty and clusters.",
+					"description": "Run a full keyword research pass for a topic, niche, product or business and return a prioritised keyword list grouped into clusters. Use when the user asks to find keywords, do keyword research, discover what people search for, check search volume or difficulty for a topic, or find long-tail or low-competition keywords.",
+					"argumentHint": "<topic or business> [location]",
+					"path": "plugins/ubersuggest/skills/keyword-research/SKILL.md"
+				},
+				{
+					"name": "project-setup",
+					"command": "/ubersuggest:project-setup",
+					"displayName": "Project Setup",
+					"shortDescription": "Set a website up in Ubersuggest: project, competitors, tracked keywords and AI prompts.",
+					"description": "Set a website up in Ubersuggest for the first time — create the project, describe the business, pick competitors, choose the topics and prompts tracked in AI answers, and select keywords to rank-track. Use when the user has no project yet, says they just signed up, asks how to get started, wants to track a site, add a domain, set up rank tracking, or start monitoring their brand in ChatGPT and other AI assistants.",
+					"argumentHint": "<your website> [where your customers are]",
+					"path": "plugins/ubersuggest/skills/project-setup/SKILL.md"
+				},
+				{
+					"name": "seo-action-plan",
+					"command": "/ubersuggest:seo-action-plan",
+					"displayName": "SEO Action Plan",
+					"shortDescription": "Look at a site and decide the single next thing its owner should do about SEO.",
+					"description": "Look at a website and decide what its owner should do next about SEO, in plain language, without making them choose. Use when the user does not know where to start, asks what is wrong with their site, whether their SEO is any good, why they get no traffic, what to do first, or hands over a domain with no specific question. Also the right entry point for anyone who does not know SEO terminology.",
+					"argumentHint": "<your website> [what you sell] [where your customers are]",
+					"path": "plugins/ubersuggest/skills/seo-action-plan/SKILL.md"
+				},
+				{
+					"name": "seo-foundations",
+					"command": "/ubersuggest:seo-foundations",
+					"displayName": "SEO Foundations",
+					"shortDescription": "Core SEO know-how and the map from a goal to the right Ubersuggest tool.",
+					"description": "Core SEO know-how and the map from a user's goal to the right Ubersuggest MCP tool. Use whenever the user asks anything about SEO, keywords, search volume, rankings, organic traffic, competitors, backlinks, domain authority, site health, Core Web Vitals, content strategy, or brand visibility in AI answers (ChatGPT, Perplexity, AI Overviews). Also use before any other ubersuggest skill, to load the shared rules on auth, locations, quotas and credit costs.",
+					"argumentHint": null,
+					"path": "plugins/ubersuggest/skills/seo-foundations/SKILL.md"
+				},
+				{
+					"name": "site-audit",
+					"command": "/ubersuggest:site-audit",
+					"displayName": "Site Audit",
+					"shortDescription": "Crawl a site for technical SEO problems and report prioritised fixes.",
+					"description": "Crawl a site for technical SEO problems and report prioritised fixes with Core Web Vitals. Use when the user asks for a site audit, a technical SEO check, why their site is slow, whether their site has SEO errors, about broken links, missing titles or H1s, duplicate content, Core Web Vitals, PageSpeed or a health score.",
+					"argumentHint": "<domain>",
+					"path": "plugins/ubersuggest/skills/site-audit/SKILL.md"
+				}
+			]
+		}
+	]
+}

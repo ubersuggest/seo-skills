@@ -77,6 +77,20 @@ The Claude-only pieces — `.claude-plugin/`, the bundled `.mcp.json` and the
 | --- | --- |
 | [`ubersuggest`](plugins/ubersuggest) | Turns Claude into an SEO consultant backed by real Ubersuggest data — keyword research, competitor analysis, site audits, backlinks, content briefs, content planning and AI search visibility. |
 
+## Skills index
+
+[`skills.json`](skills.json) at the repo root lists every skill with its
+command, display name, short and full description and argument hint, so apps
+can list the skills without walking the tree. It is generated — after adding or
+editing a skill, regenerate it:
+
+```
+node scripts/build-skills-index.mjs
+```
+
+`node scripts/build-skills-index.mjs --check` exits non-zero when the file is
+stale, for use in CI.
+
 ## Accounts
 
 The `ubersuggest` plugin connects to the Ubersuggest MCP server, which signs you
